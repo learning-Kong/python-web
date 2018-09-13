@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!--<html lang="en">-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>table 标签</title>
+</head>
+<body>
+    <div class="table">
+        <table border="1px" cellspacing="0">
+            <!--<表格头>-->
+            <thead>
+                <tr>    <!--表格行row-->
+                    <th>星期1</th>    <!--表格列 table-head，【注意】这里使用的是th-->
+                    <th>星期2</th>
+                    <th>星期3</th>
+                    <th>星期4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>    <!--表格行row-->
+                    <td>1</td>    <!--表格列 table-head，【注意】这里使用的是th-->
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>    <!--表格行row-->
+                    <td>1</td>    <!--表格列 table-head，【注意】这里使用的是th-->
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+                <tr>    <!--表格行row-->
+                    <td>1</td>    <!--表格列 table-head，【注意】这里使用的是th-->
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <hr>
+    <div class="table">
+        <table border="2px" cellspacing="0">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>星期3</th>
+                    <th>星期1</th>
+                    <th>星期2</th>
+                    <th>星期2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">上午</td>
+                    <td>sports</td>
+                    <td>math</td>
+                    <td>chinese</td>
+                    <td>chinese</td>
+                </tr>
+                <tr>
+                    <td>sports</td>
+                    <td>math</td>
+                    <td>chinese</td>
+                    <td>chinese</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">下午</td>
+                    <td>sports</td>
+                    <td>math</td>
+                    <td>chinese</td>
+                    <td>chinese</td>
+                </tr>
+                <tr>
+                    <td>sports</td>
+                    <td>math</td>
+                    <td>chinese</td>
+                    <td>chinese</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">备注：2018-09-13</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
