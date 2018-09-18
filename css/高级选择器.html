@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高级选择器</title>
+    <style type="text/css">
+        /*后代选择器 在css中使用非常频繁*/
+        div p{
+            color: red;
+        }
+        .container div p{
+            color: green;
+        }
+        /*子代选择器,必须是父子关系*/
+        .container2>p{
+            color: #f0ad4e;
+        }
+        /*交集选择器 必须是h3 必须有active属性*/
+        h3{
+            width:300px;
+            color: red;
+        }
+        .active{
+            font-size: 30px;
+        }
+        h3.active{
+            background-color: yellow;
+        }
+        /*分组选择器
+            并集选择器（组合）  相比通用选择器，效率更好
+                       设置多个标签中的统一样式
+        */
+        body,div,ol,ul{
+            margin:0;
+            padding: 0;
+        }
+
+        /*通用选择器： 性能比较差*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>this is 段落</p>
+    </div>
+    <div class="container">
+        <p>this is a string</p>
+        <div>
+            <p>this is a sun string</p>
+        </div>
+    </div>
+    <div class="container2">
+        <p> this is Relationships</p>
+    </div>
+    <h3>I am h3</h3>
+    <span class="active">I am h3</span>
+    <h3 class="active">I am h3</h3>
+</body>
+</html>

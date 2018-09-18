@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>伪选择器</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        ul li{
+            position: relative;
+        }
+        ul li img{
+            display: none;
+            position: absolute;
+            top: -16px;
+            left: 36px;
+        }
+        ul li:hover img{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            alex
+            <img src="https://i8.mifile.cn/b2c-mimall-media/4f036ae4d45002b2a6fb6756cedebf02.png" class="original-img">
+        </li>
+    </ul>
+</body>
+</html>
